@@ -87,8 +87,8 @@ body { background: #eee;}
         <div class="swiper-slide">Slide 8</div>
         <div class="swiper-slide">Slide 9</div>
       </div>
-//      <div class="swiper-button-next"></div>
-//      <div class="swiper-button-prev"></div>
+<!--       <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div> -->
       <div class="swiper-pagination"></div>
     </div>
 </div>
