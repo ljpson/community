@@ -22,6 +22,8 @@
 <a href="swiper/swiper-pagination/index.html">슬라이드 메뉴 테스트 -3</a><br>
 <a href="swiper/swiper-slideable/index.jsp">왼쪽 돌출 햄버거 메뉴</a><br><br>
 
+
+<a href="swiper/swiper-centered/index.jsp">슬라이드 메뉴 테스트 -1</a><br>
 </div>
 </body>
 </html>
