@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="utf-8">
+	<title>Swiper - pagenation multipul</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/swiper.css">
+</head>
+<body>
+<div class="swiper-container gallery-top">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide"><div class="swiper-slide-container">Slide 1</div></div>
+		<div class="swiper-slide"><div class="swiper-slide-container">Slide 2</div></div>
+		<div class="swiper-slide"><div class="swiper-slide-container">Slide 3</div></div>
+		<div class="swiper-slide"><div class="swiper-slide-container">Slide 4</div></div>
+        <div class="swiper-slide"><div class="swiper-slide-container">Slide 5</div></div>
+    </div>
+    <div class="swiper-pagination pagination_bullet"></div>
+    <div class="swiper-pagination pagination_progress"></div>
+</div>
+</body>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script>
+	var galleryTop = new Swiper('.gallery-top', {
+    	spaceBetween: 10,   //슬라이드 간격
+        pagination: {   //페이징 사용자 설정
+        	el: ".pagination_bullet",   //페이징 태그 클래스 설정 
+            clickable: true,    //버튼 클릭 여부
+            type : 'bullets',   //페이징 타입 설정(종류: bullets, fraction, progressbar)   
+            // Bullet Numbering 설정
+        	renderBullet: function (index, className) {
+        		return '<span class="' + className + '">' + (index + 1) + "</span>";
+        	},
+		},
+    });
+
+    //progress Bar
+	var pagingSwiper = new Swiper(".gallery-top", {
+		pagination: {
+			el: ".pagination_progress",
+			type: "progressbar",
+		},
+	});
+
+    //Main Swiper로 progress Bar 제어
+    galleryTop.controller.control = pagingSwiper;
+</script>
+</html>
