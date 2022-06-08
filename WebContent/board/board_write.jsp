@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
@@ -123,6 +124,7 @@ $(function() {
 		<td style="font-family:돋음; font-size:12; color:darkred">
 			<input name="board_file" type="file" class="form-control"/>
 			※ 첨부파일은 5MB 이하 1개만 등록 가능합니다.
+
 		</td>
 	</tr>
 	<tr bgcolor="cccccc">
